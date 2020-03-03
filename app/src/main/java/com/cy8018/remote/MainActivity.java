@@ -12,7 +12,6 @@ import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
-    private Button btnVolUp, btnVolDown, btnNext, btnPrev, btnPlayPause, btnMute, btnF5S, btnF30S, btnB5S, btnB30S;
     private TextView text;
     private EditText editTextIP;
 
@@ -25,19 +24,19 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     }
 
     private void initView() {
-        text = (TextView) findViewById(R.id.textView);
-        editTextIP = (EditText) findViewById(R.id.editText);
+        text = findViewById(R.id.textView);
+        editTextIP = findViewById(R.id.editText);
 
-        btnVolUp = (Button) findViewById(R.id.btnVolUp);
-        btnVolDown = (Button) findViewById(R.id.btnVolDown);
-        btnNext = (Button) findViewById(R.id.btnNext);
-        btnPrev = (Button) findViewById(R.id.btnPrev);
-        btnPlayPause = (Button) findViewById(R.id.btnPlayPause);
-        btnMute = (Button) findViewById(R.id.btnMute);
-        btnF5S = (Button) findViewById(R.id.btnF5S);
-        btnF30S = (Button) findViewById(R.id.btnF30S);
-        btnB5S = (Button) findViewById(R.id.btnB5S);
-        btnB30S = (Button) findViewById(R.id.btnB30S);
+        Button btnVolUp = findViewById(R.id.btnVolUp);
+        Button btnVolDown = findViewById(R.id.btnVolDown);
+        Button btnNext = findViewById(R.id.btnNext);
+        Button btnPrev = findViewById(R.id.btnPrev);
+        Button btnPlayPause = findViewById(R.id.btnPlayPause);
+        Button btnMute = findViewById(R.id.btnMute);
+        Button btnF5S = findViewById(R.id.btnF5S);
+        Button btnF30S = findViewById(R.id.btnF30S);
+        Button btnB5S = findViewById(R.id.btnB5S);
+        Button btnB30S = findViewById(R.id.btnB30S);
 
         btnVolUp.setOnClickListener(this);
         btnVolDown.setOnClickListener(this);
