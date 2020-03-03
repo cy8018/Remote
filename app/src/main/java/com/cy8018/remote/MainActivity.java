@@ -12,7 +12,7 @@ import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
-    private Button btnVolUp, btnVolDown, btnNext, btnPrev;
+    private Button btnVolUp, btnVolDown, btnNext, btnPrev, btnPlayPause, btnMute, btnF5S, btnF30S, btnB5S, btnB30S;
     private TextView text;
     private EditText editTextIP;
 
@@ -32,11 +32,23 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         btnVolDown = (Button) findViewById(R.id.btnVolDown);
         btnNext = (Button) findViewById(R.id.btnNext);
         btnPrev = (Button) findViewById(R.id.btnPrev);
+        btnPlayPause = (Button) findViewById(R.id.btnPlayPause);
+        btnMute = (Button) findViewById(R.id.btnMute);
+        btnF5S = (Button) findViewById(R.id.btnF5S);
+        btnF30S = (Button) findViewById(R.id.btnF30S);
+        btnB5S = (Button) findViewById(R.id.btnB5S);
+        btnB30S = (Button) findViewById(R.id.btnB30S);
 
         btnVolUp.setOnClickListener(this);
         btnVolDown.setOnClickListener(this);
         btnNext.setOnClickListener(this);
         btnPrev.setOnClickListener(this);
+        btnPlayPause.setOnClickListener(this);
+        btnMute.setOnClickListener(this);
+        btnF5S.setOnClickListener(this);
+        btnF30S.setOnClickListener(this);
+        btnB5S.setOnClickListener(this);
+        btnB30S.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +69,30 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btnPrev:
                 text.setText("P-");
                 Send("Prev");
+                break;
+            case R.id.btnPlayPause:
+                text.setText("Play/Pause");
+                Send("PlayPause");
+                break;
+            case R.id.btnMute:
+                text.setText("Mute");
+                Send("Mute");
+                break;
+            case R.id.btnF5S:
+                text.setText("F5S");
+                Send("F5S");
+                break;
+            case R.id.btnF30S:
+                text.setText("F30S");
+                Send("F30S");
+                break;
+            case R.id.btnB5S:
+                text.setText("B5S");
+                Send("B5S");
+                break;
+            case R.id.btnB30S:
+                text.setText("B30S");
+                Send("B30S");
                 break;
             default:
                 break;

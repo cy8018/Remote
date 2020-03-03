@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Remote</string>
+    <string name="PlayPause">&gt;||</string>
+    <string name="B5S">&lt;</string>
+    <string name="B30S">&lt;&lt;</string>
+    <string name="F5S">&gt;</string>
+    <string name="F30S">&gt;&gt;</string>
 </resources>
