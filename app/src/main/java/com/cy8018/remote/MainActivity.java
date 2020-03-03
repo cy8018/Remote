@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         Button btnF30S = findViewById(R.id.btnF30S);
         Button btnB5S = findViewById(R.id.btnB5S);
         Button btnB30S = findViewById(R.id.btnB30S);
+        Button btnShutdown = findViewById(R.id.btnShutdown);
 
         btnVolUp.setOnClickListener(this);
         btnVolDown.setOnClickListener(this);
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         btnF30S.setOnClickListener(this);
         btnB5S.setOnClickListener(this);
         btnB30S.setOnClickListener(this);
+        btnShutdown.setOnClickListener(this);
     }
 
     @Override
@@ -92,6 +94,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btnB30S:
                 text.setText("B30S");
                 Send("B30S");
+                break;
+            case R.id.btnShutdown:
+                text.setText("Shutdown");
+                Send("Shutdown");
                 break;
             default:
                 break;
