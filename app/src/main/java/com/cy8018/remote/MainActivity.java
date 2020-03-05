@@ -12,6 +12,8 @@ import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
+    private static final String TAG = "MainActivity";
+
     private TextView text;
     private EditText editTextIP;
 
@@ -112,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             public void run() {
                 super.run();
                 try {
+
                     Socket socket = new Socket(IP, 20000);
                     OutputStream os = socket.getOutputStream();
                     os.write(msg.getBytes());
